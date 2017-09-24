@@ -5,7 +5,8 @@ class TimerTray extends Tray {
   constructor(iconPath, mainWindow) {
     super(iconPath);
 
-    this.on('click', this.onClick);
+    this.mainWindow = mainWindow;
+    this.on('click', this.onClick.bind(this));
   }
 
   onClick(event, bounds) {
