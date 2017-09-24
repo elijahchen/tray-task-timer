@@ -1,6 +1,6 @@
 const electron = require('electron');
 const path = require('path');
-const TimerTray = require(./app/timer_tray)
+const TimerTray = require('./app/timer_tray');
 
 const { app, BrowserWindow, Tray } = electron;
 

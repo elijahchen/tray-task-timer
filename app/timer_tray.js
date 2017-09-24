@@ -1,7 +1,7 @@
 const electron = require('electron');
 const { Tray } = electron;
 
-class TimerTray = extends Tray {
+class TimerTray extends Tray {
   constructor(iconPath, mainWindow) {
     super(iconPath);
 
